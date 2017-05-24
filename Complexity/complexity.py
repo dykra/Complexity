@@ -26,8 +26,8 @@ def complexity_estimate(structure, fun, create_struct_fun, time, given_array):
     if np_array_time.size < np_array__n.size:
         np_array__n = np.delete(np_array__n, list(range(np_array_time.size, np_array__n.size)))
     np_tmp_array = np.array([np.var(np.log(np_array_time / np_array__n)),
-                            np.var(np.var(np.log(np_array_time / (np_array__n * np.log(np_array__n))))),
-                            np.var(np.var(np.log(np_array_time / np_array__n ** 2)))]
+                            np.var(np.log(np_array_time / (np_array__n * np.log(np_array__n)))),
+                            np.var(np.log(np_array_time / np_array__n ** 2))]
                             )
     logger.info("complexity_ estimate finished correctly.")
     if not given_array:
