@@ -18,6 +18,6 @@ pip3 install git+https://github.com/dykra/ComplexityEstimator.git --user
 
 Execution example:
 
-Complexity --file Complexity.functions_and_structures  --fun maine --estimate create_list size 1000 --deadline 10
+Complexity --file Complexity.functions_and_structures  --fun sort --estimate create_list size 1000 --deadline 10
 
 Files to test have to be included in Complexity package (like functions_and_stryctures.py).
